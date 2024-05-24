@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio" charset="utf-8">
+<TITLE>テストのWebページ</TITLE>
+</HEAD>
+<BODY>
+    <script>
+        //window.alert('印刷するよ');
+        //window.print();
+
+        //var ans = window.confirm('印刷してもいい？')
+        //if (ans == true){
+        //    window.print();
+        //}
+
+        /* if文 */
+
+        //var ans = window.prompt('数を入力して');
+        //ans = parseInt(ans);
+        //if (ans > 5) {
+        //    window.alert('5より大きい');
+        //} else {
+        //    window.alert('5以下');
+        //}
+
+        //var sum = 0;
+        //var shiki = 0;
+
+
+        /* for文 */
+
+        //for (var i = 1; i <= 10; i++) {
+        //    sum = sum + i;
+        //    shiki = shiki + '+' + i;
+
+        //    //window.document.write('<p>' + sum + '<p>');
+        //    window.document.write('<p>' + shiki + '= ' + sum + '<p>');
+        //}
+
+
+        /* 配列 */
+
+        //var youbi = ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'];
+        //for (var i = 0; i < 7; i++) {
+
+        //    var date = new Date(2018, 0 ,i);
+
+        //    //document.write('<p>' + youbi[i] + '<p>');
+        //    document.write('<p>' + date.toLocaleString() + 'は' + youbi[date.getDay()] + '</p>');
+        //}
+
+        /* 関数 */
+
+        function getyoubi(year, month, day) {
+            var youbi = ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'];
+
+            if (month < 0) {
+                return 'そんな月はない';
+            }
+
+            var date = new Date(year, month - 1, day);
+
+            return youbi[date.getDay()];
+        }
+
+        document.write('<p>1985年-1月10日は' + getyoubi(1985, -1, 10) + '</p>');
+        document.write('<p>1985年3月10日は' + getyoubi(1985, 3, 10) + '</p>');
+        document.write('<p>2001年3月10日は' + getyoubi(2001, 3, 10) + '</p>');
+        document.write('<p>2018年3月10日は' + getyoubi(2018, 3, 10) + '</p>');
+    </script>
+</BODY>
+</HTML>
