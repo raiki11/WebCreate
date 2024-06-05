@@ -7,8 +7,7 @@
       "RelativeMoniker": "D:0:0:{4E5E9AFC-9923-430E-93B7-E0E24C1C5032}|c2test.vcxproj|solutionrelative:c3Test.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E5E9AFC-9923-430E-93B7-E0E24C1C5032}|c2test.vcxproj|C:\\WebCreate\\WebCreate\\textbook\\c2Test.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E5E9AFC-9923-430E-93B7-E0E24C1C5032}|c2test.vcxproj|solutionrelative:c2Test.htm||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WebCreate\\WebCreate\\test\\c2c3review02.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +33,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "c2c3review02.html",
+              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\test\\c2c3review02.html",
+              "RelativeDocumentMoniker": "..\\test\\c2c3review02.html",
+              "ToolTip": "C:\\WebCreate\\WebCreate\\test\\c2c3review02.html",
+              "RelativeToolTip": "..\\test\\c2c3review02.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-05T04:51:42.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "c3Test.htm",
               "DocumentMoniker": "C:\\WebCreate\\WebCreate\\textbook\\c3Test.htm",
               "RelativeDocumentMoniker": "c3Test.htm",
               "ToolTip": "C:\\WebCreate\\WebCreate\\textbook\\c3Test.htm",
               "RelativeToolTip": "c3Test.htm",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-05-24T01:46:35.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "c2Test.htm",
-              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\textbook\\c2Test.htm",
-              "RelativeDocumentMoniker": "c2Test.htm",
-              "ToolTip": "C:\\WebCreate\\WebCreate\\textbook\\c2Test.htm",
-              "RelativeToolTip": "c2Test.htm",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-24T01:46:33.245Z",
               "EditorCaption": ""
             }
           ]

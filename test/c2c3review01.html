@@ -6,7 +6,17 @@
     </head>
     <body>
         <script>
-		//ここに課題の解答を入力してください！
+            //ここに課題の解答を入力してください！
+            var input = window.prompt('パスワードを入力してください');
+            var ans = 123;
+            var name = 456;
+            if (ans == input) {
+
+                window.document.write('<p>こんにちは' + name + 'さん</p>');
+
+            } else {
+                window.alert('あなたは誰ですか、知らない人です');
+            }
         </script>
     </body>
 </html>
