@@ -7,6 +7,14 @@
     <body>
         <script>
             //ここに課題の解答を入力してください！
+            var team = ['A', 'B', 'C', 'D', 'E'];
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j < 5; j++) {
+                    if (i != j) {
+                        document.write('<p>' + team[i] + 'vs' + team[j] + '</p>');
+                    }
+                }
+            }
             //「左と右のチームが同じでなければ、チームの組み合わせを表示する」条件文を作り、TRUEならドキュメントに表示する処理を書きます！
         </script>
     </body>
