@@ -6,8 +6,21 @@
     </head>
     <body>
         <script>
-		//ここに課題の解答を入力してください！
-        //入力がなかった場合の処理は、「年齢に何も入っていなければ(null)」という条件式を組んでください！
+            //ここに課題の解答を入力してください！
+            var age = window.prompt('年齢層を判定します。年齢を入力してください。');
+            if (age == null) {
+                window.document.write('<p>入力がないため、結果が正しく表示されませんでした。</p > ');
+            } else if (age <= 17) {
+                window.document.write('<p>' + age + '歳は「未成年」です。</p>');
+            } else if (age <= 64) {
+                window.document.write('<p>' + age + '歳は「成人」です。</p>');
+            } else if (age <= 99) {
+                window.document.write('<p>' + age + '歳は「高齢者」です。</p>');
+            } else if (age >= 100) {
+                window.document.write('<p>100歳以上は「ご長寿」です。長生きしてください。</p>');
+            }
+            
+            //入力がなかった場合の処理は、「年齢に何もっていなければ(null)」という条件式を組んでください！
         </script>
     </body>
 </html>
