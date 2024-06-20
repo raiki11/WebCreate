@@ -5,9 +5,26 @@
         <title>Chapter2とChapter3の復習08</title>
     </head>
     <body>
-		<h2></h2>
+		<h2>関数を作って成績を判定する</h2>
         <script>
-        //ここに課題の解答を入力してください！
+            //ここに課題の解答を入力してください！
+            function SeisekiHantei(chukan, kimatu){
+                var avg = (chukan + kimatu) / 2;
+                if (avg >= 60) {
+                    return '合格';
+                } else {
+                    return '不合格';
+                }
+            }
+            var Achukan = 80;
+            var Akimatu = 50;
+            var Bchukan = 40;
+            var Bkimatu = 70;
+
+            document.write('<p>Aさんは' + SeisekiHantei(Achukan, Akimatu) + '</p>');
+            document.write('<p>Bさんは' + SeisekiHantei(Bchukan, Bkimatu) + '</p>');
+
+            
 		//「成績を判定する関数」を作成し、作成した関数を使ってAさんBさんの成績をドキュメントで表示するようにしてください！
         </script>
     </body>

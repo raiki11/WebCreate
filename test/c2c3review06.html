@@ -7,6 +7,26 @@
     <body>
         <script>
             //ここに課題の解答を入力してください！
+            function Shitsumon(question, ans1, ans2) {
+                var kotae = window.prompt(question);
+
+                if (kotae == null) {
+                    window.alert('そうですか、また次回教えてください');
+                } else if (kotae == ' ') {
+                    window.alert('スミマセン、よくわかませんでした');
+                } else {
+                    window.alert(ans1 + kotae + ans2);
+                }
+            }
+            Shitsumon("好きな食べ物は何ですか？", "", "ですか！いっしょですね");
+            Shitsumon("苦手な食べ物はなんですか？", "", "とは…意外です");
+            Shitsumon("行きたい国はどこですか？", "", "ですか！いつか行けるといいですね");
+            Shitsumon("明日の予定はなんですか？", "", "ですか！それは楽しみですね！");
+            Shitsumon("今年の目標はなんですか？", "ほほう", "ですか！ぜひ達成してください！");
+            Shitsumon("休日はどうしますか？", "", "いいですね！今度誘ってください！");
+
+
+
             //「質問関数」を作成し、作成した関数を使って質問内容と回答内容をアラートで表示するようにしてください！
         </script>
     </body>
