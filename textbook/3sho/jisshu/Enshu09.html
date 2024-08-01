@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Enshu09</title>
+    <style type="text/css">
+#img1 {
+  position: absolute; /* 表示位置をページ左上から絶対的に指定する */
+  top: 100px;         /* 上から150ピクセルの位置に表示する  */
+  left: 50px;         /* 左から50ピクセルの位置に表示する   */
+  width: 100px;       /* 画像の表示幅を100ピクセルにする   */
+}
+    </style>
+  </head>
+  <body>
+    <h2>動くこよみ先生</h2>
+    <input type="button" value="開始" onclick="timerstart()" />
+    <img src="./images/yellow3.jpg" border="0" id="img1" >
+<script>
+let imgLeft = 50; // 表示位置
+let direct = 1;   // 進行方向（正：右方向／負：左方向）
+function timerstart(){
+  imgLeft += 5 * direct;
+  document.getElementById("img1").style.left = imgLeft + "px";
+  setTimeout("timerstart()", 100);
+}
+</script>
+  </body>
+</html>

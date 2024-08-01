@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Enshu08</title>
+  </head>
+  <body>
+    <h2>30H JavaScript Menu</h2>
+    <p>
+      <a href="#" onclick="disp('chap1');">１章</a>
+      <a href="#" onclick="disp('chap2');">２章</a>
+      <a href="#" onclick="disp('chap3');">３章</a>
+    </p>
+    <p class="contents" id="chap1">１章 Web ページの基本<br>
+      Web サーバーとクライアント...
+    </p>
+    <p class="contents" id="chap2">２章 JavaScript の基本文法<br>
+      JavaScript とは...
+    </p>
+    <p class="contents" id="chap3">３章 JavaScript によるWebページ処理<br>
+      DOM 操作...
+    </p>
+<script>
+let disp = function(value) {
+  let contents = document.getElementsByClassName("contents");
+  for(let content of contents) {
+    content.style.display = "none";
+  }
+  let dispitem = document.getElementById(value);
+  dispitem.style.display = "block";
+}
+</script>
+  </body>
+</html>
