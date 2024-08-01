@@ -1,0 +1,14 @@
+#menu * {
+    border: solid 1px #aaa;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+#menu dd{
+    background: #eee;
+    border: solid 1px #aaa;
+    display: none;
+    text-align: center;
+}

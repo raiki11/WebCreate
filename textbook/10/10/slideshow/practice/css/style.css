@@ -1,0 +1,12 @@
+body {
+    background: #444;
+}
+
+.slideshow{
+    width: 500px;
+    margin: auto;
+}
+
+.slideshow img{
+    width: 100%;
+}
