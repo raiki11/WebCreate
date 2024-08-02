@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample3_03</title>
+    <style type="text/css">
+        img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>30H_jsのこよみ先生</h2>
+    <p id="message">JavaScriptは面白いですか？</p>
+    <input type="button" value="とっても！" onclick="disp()" />
+    <input type="button" value="ちょっとむずかしい・・・" onclick="stopDisp()" /><br>
+    <img id="teacherImg" src="./images/pink3.jpg" alt="こよみ先生" />
+
+    <script>
+        let isDisp = false;
+        let repeat;
+        let disp = function () {
+            let pMessage = document.getElementById('message');
+            if (isDisp == true) {
+                pMessage.innerHTML = "それはよかったです！";
+                isDisp = false;
+            } else {
+                pMessage.innerHTML = "<br>";
+                isDisp = true;
+            }
+            repeat = setTimeout("disp()", 500);
+        }
+        let stopDisp = function () {
+            if (repeat) {
+                clearTimeout(repeat);
+            }
+        }
+    </script>
+</body>
+</html>

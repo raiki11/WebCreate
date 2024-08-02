@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>Enshu08</title>
+      <style>
+          contents{
+              display: none;
+          }
+      </style>
   </head>
   <body>
     <h2>30H JavaScript Menu</h2>
@@ -28,7 +33,14 @@ let disp = function(value) {
   }
   let dispitem = document.getElementById(value);
   dispitem.style.display = "block";
-}
+    }
+
+    window.onload = function () {
+        const contents = document.getElementsByClassName("contents");
+        for (const content of contents) {
+            content.style.display = "none";
+        }
+    }
 </script>
   </body>
 </html>

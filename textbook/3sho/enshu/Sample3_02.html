@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample3_02</title>
+</head>
+<body onload="init()">
+    <h2>30H_jsのこよみ先生</h2>
+    <input type="button" value="縮小" onclick="changeSmall()" />
+    <input type="button" value="拡大" onclick="changeBig()" />
+    <input type="button" value="表示" onclick="imgDisplay()" />
+    <input type="button" value="非表示" onclick="imgHide()" /><br>
+    <img id="teacherImg" src="./images/pink3.jpg" alt="こよみ先生" />
+
+    <script>
+        let img = document.getElementById('teacherImg');
+        let init = function () {
+            img.style.width = '300px';
+            img.style.height = 'auto';
+        }
+        let changeSmall = function () {
+            img.style.width = '150px';
+        }
+        let changeBig = function () {
+            img.style.width = '300px';
+        }
+        let imgDisplay = function () {
+            img.style.display = 'block';
+        }
+        let imgHide = function () {
+            img.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
