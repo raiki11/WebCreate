@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Enshu06</title>
+  </head>
+  <body>
+    <h2>簡単カウンター</h2>
+    <p>
+      <a href="#" onclick="minus();">減＜</a>
+      <span id="counterarea">5</span>
+      <a href="#" onclick="plus();">＞増</a>
+    </p>
+<script>
+let counter = 5;
+let disparea = document.getElementById("counterarea");
+let minus = function() {
+    counter--;
+    disparea.innerHTML = counter;
+  }
+let plus = function() {
+  counter++;
+  disparea.innerHTML = counter;
+}
+</script>
+  </body>
+</html>
