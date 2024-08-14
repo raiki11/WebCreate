@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE>ミュージックプレイヤー</TITLE>
+    <link rel="stylesheet" href="mplayer.css">
+</HEAD>
+<BODY>
+    <div class="appframe">
+        <h1>ミュージックプレイヤー</h1>
+        <img src="pict_stop.png" alt="再生状態を表す画像">
+        <audio src="bgm1.mp3" controls></audio>
+        <p>聞きたい曲を選んでね！<a id="random" href="#">ランダム</a></p>
+        <ul>
+            <li data-file="bgm1.mp3" class="active">ミュージック1</li>
+            <li data-file="bgm2.mp3">ミュージック2</li>
+            <li data-file="bgm3.mp3">ミュージック3</li>
+            <li data-file="bgm4.mp3">ミュージック4</li>
+            <li data-file="bgm5.mp3">ミュージック5</li>
+            <li data-file="bgm6.mp3">ミュージック6</li>
+        </ul>
+        <script src="mplayer.js" charset="utf-8"></script>
+    </div>
+</BODY>
+</HTML>

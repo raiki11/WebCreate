@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample3_01</title>
+    <style type="text/css">
+        img{
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>30H_jsのこよみ先生</h2>
+    <p>頑張って勉強していきましょう</p>
+    <input type="button" value="はい！" onclick="transform()" />
+    <input type="button" value="いいえ・・・" onclick="dispYell()" /><br>
+    <img id="teacherImg" src="./images/pink3.jpg" alt="こよみ先生" />
+
+    <script>
+        let dispYell = function () {
+            let Plist = document.getElementsByTagName('p');
+            Plist[0].textContent = 'そんなこと言わないで～';
+        }
+        let transform = function () {
+            let img = document.getElementById('teacherImg');
+            img.src = './images/yellow3.jpg';
+        }
+    </script>
+</body>
+</html>
