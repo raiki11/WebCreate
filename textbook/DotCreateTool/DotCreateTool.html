@@ -18,8 +18,8 @@
 <body>
     <div>
         <table id="dotTBL"></table>
-    <br>
-    <table id="ColorTBL"><tr></tr></table>
+        <br>
+        <table id="ColorTBL"><tr></tr></table>
     </div>
     <br>
     <div>
@@ -32,6 +32,7 @@
         var Matrix_Rows = 16;
         var Matrix_Cols = 16;
         var Color_Index = "black";
+        var isMouseDown = false;
 
         var dotTbl = document.getElementById("dotTBL"); //ドット絵を描くテーブル
         var colTbl = document.getElementById("ColorTBL"); //色を選ぶテーブル
@@ -39,37 +40,51 @@
         var cvs = document.getElementById("picture"); //キャンバス
         var ctx = cvs.getContext("2d");
 
-        //ドット絵を描くテーブルを用意する
+        // ドット絵を描くテーブルを用意する
         function dotTable() {
-            for (var i = 0; i < Matrix_Rows; i++) { //行を追加する この指示で既存の1に追加する
+            for (var i = 0; i < Matrix_Rows; i++) { // 行を追加する この指示で既存の1に追加する
                 var row = dotTbl.insertRow(-1);
-                for (var j = 0; j < Matrix_Cols; j++) { //その行にセル(列)を追加する
+                for (var j = 0; j < Matrix_Cols; j++) { // その行にセル(列)を追加する
                     var cell = row.insertCell(-1);
-                    cell.onclick = function () {
-                        this.style.backgroundColor = Color_Index; //クリックしたセルを色付け
+                    cell.onmousedown = function () {
+                        isMouseDown = true;
+                        this.style.backgroundColor = Color_Index; // クリックしたセルを色付け
+                    }
+                    cell.onmousemove = function () {
+                        if (isMouseDown) {
+                            this.style.backgroundColor = Color_Index; // ドラッグした時に色を付ける
+                        }
+                    }
+                    cell.onmouseup = function () {
+                        isMouseDown = false;
+                    }
+                    cell.onmouseleave = function () {
+                        if (isMouseDown) {
+                            this.style.backgroundColor = Color_Index; // ドラッグがセル外でも続いた場合に色を付ける
+                        }
                     }
                 }
             }
         }
 
-        //選べる色を配列で定義する
-        var COL_SAMPLE = ["black", "gray", "silver", "white", "maroon", "red", "orange", "gold", "yellow", "lime", "cyan", "blue", "navy", "purple", "pink"];
+        // 選べる色を配列で定義する
+        var COL_SAMPLE = ["black", "gray", "silver", "white", "maroon", "red", "orange", "gold", "yellow", "lime", "cyan", "blue","magenta","violet","pink"];
 
-        //色を選ぶテーブルを用意する
+        // 色を選ぶテーブルを用意する
         function colorTable() {
-            for (var j = 0; j < COL_SAMPLE.length; j++) { //1列目のセル
+            for (var j = 0; j < COL_SAMPLE.length; j++) { // 1列目のセル
                 var cell = colTbl.rows[0].insertCell(-1);
                 cell.style.backgroundColor = COL_SAMPLE[j];
                 cell.innerHTML = "<img src='pensaki.png'>";
                 cell.style.padding = "0px";
                 cell.style.border = "0px";
                 cell.onclick = function () {
-                    Color_Index = this.style.backgroundColor; //クリックした時に色を設定する
+                    Color_Index = this.style.backgroundColor; // クリックした時に色を設定する
                 }
             }
         }
 
-        //全てのセルを白色にする関数
+        // 全てのセルを白色にする関数
         function clearCell() {
             for (var i = 0; i < Matrix_Rows; i++) {
                 for (var j = 0; j < Matrix_Cols; j++) {
@@ -80,21 +95,29 @@
             ctx.fillRect(0, 0, 16, 16);
         }
 
-        //キャンバスにドット絵を描く
+        // キャンバスにドット絵を描く
         function drawCanvas() {
             for (var i = 0; i < Matrix_Rows; i++) {
                 for (var j = 0; j < Matrix_Cols; j++) {
                     var cell = dotTbl.rows[i].cells[j].style.backgroundColor || 'white';
                     ctx.fillStyle = cell;
-                    ctx.fillRect(j, i, 1, 1); //実行者描画命令
+                    ctx.fillRect(j, i, 1, 1); // 実行者描画命令
                 }
             }
         }
 
-        window.onload = function () { //HTMLが読み込まれると色を置く関数
-            dotTable();  //ドット絵テーブル
-            colorTable();  //色を選ぶテーブル
-            clearCell();  //最初にテーブルをクリアしておく
+        window.onmousedown = function () {
+            isMouseDown = true;
+        }
+
+        window.onmouseup = function () {
+            isMouseDown = false;
+        }
+
+        window.onload = function () { // HTMLが読み込まれると色を置く関数
+            dotTable();  // ドット絵テーブル
+            colorTable();  // 色を選ぶテーブル
+            clearCell();  // 最初にテーブルをクリアしておく
         }
     </script>
 </body>
