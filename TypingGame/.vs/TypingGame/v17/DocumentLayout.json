@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\WebCreate\\WebCreate\\TypingGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WebCreate\\WebCreate\\TypingGame\\src\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WebCreate\\WebCreate\\TypingGame\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WebCreate\\WebCreate\\TypingGame\\src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WebCreate\\WebCreate\\TypingGame\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WebCreate\\WebCreate\\TypingGame\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\WebCreate\\WebCreate\\TypingGame\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,40 +39,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.css",
-              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\TypingGame\\src\\main.css",
-              "RelativeDocumentMoniker": "src\\main.css",
-              "ToolTip": "C:\\WebCreate\\WebCreate\\TypingGame\\src\\main.css",
-              "RelativeToolTip": "src\\main.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-30T00:30:39.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.js",
-              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\TypingGame\\src\\main.js",
-              "RelativeDocumentMoniker": "src\\main.js",
-              "ToolTip": "C:\\WebCreate\\WebCreate\\TypingGame\\src\\main.js",
-              "RelativeToolTip": "src\\main.js",
+              "Title": "Index.html",
+              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\TypingGame\\Index.html",
+              "RelativeDocumentMoniker": "Index.html",
+              "ToolTip": "C:\\WebCreate\\WebCreate\\TypingGame\\Index.html",
+              "RelativeToolTip": "Index.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-30T00:30:10.444Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-05T01:47:31.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\TypingGame\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\WebCreate\\WebCreate\\TypingGame\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-30T00:29:36.14Z",
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\TypingGame\\main.js",
+              "RelativeDocumentMoniker": "main.js",
+              "ToolTip": "C:\\WebCreate\\WebCreate\\TypingGame\\main.js",
+              "RelativeToolTip": "main.js",
+              "ViewState": "AQIAAKcBAAAAAAAAAAAowLYBAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-05T00:25:22.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\WebCreate\\WebCreate\\TypingGame\\main.css",
+              "RelativeDocumentMoniker": "main.css",
+              "ToolTip": "C:\\WebCreate\\WebCreate\\TypingGame\\main.css",
+              "RelativeToolTip": "main.css",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvyMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-05T00:25:19.432Z",
               "EditorCaption": ""
             }
           ]
